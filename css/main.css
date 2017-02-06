@@ -1,0 +1,204 @@
+/************
+COLORS USED:
+#000;
+#222;
+#444;
+#666;
+#999;
+#CCC; 
+#DDD;
+#EEE;
+darkblue
+royalblue
+********/
+
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans|Droid+Serif');
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/************
+DEFAULT STYLE
+*************/
+* {
+    box-sizing: border-box;
+}
+
+body{
+	font-family: "Droid Sans", sans-serif;
+    font-size: 0.618rem;
+	line-height: 1.618;
+    color: #EEE;
+    margin: 0;
+}
+
+h1, 
+h2, 
+h3 {
+    line-height: 1.618;
+    font-family: "Droid Serif", serif;
+}
+
+h2 {
+    padding: 0 0 0.5rem 0;
+    color: #666;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a:link,
+a:visited,
+a:active {
+    color: #FFF;
+}
+
+a:hover {
+    color: #CCC
+}
+
+
+
+/***************
+SETTING MARGINS: 
+****************/
+h1:first-child, 
+h2:first-child,
+main p:first-child,
+footer p:first-child {
+    margin: 0 0 1rem 0;
+}
+
+p:last-child, 
+header p:last-child {
+    margin: 1rem 0 0 0;
+}
+
+h2 {
+    border-bottom: 1px solid #666;
+}
+
+h2::first-letter {
+    font-size: 4rem;
+}
+
+.box {
+    max-width: 100rem;
+    margin: 0 2rem;
+}
+
+.bg-header .box, 
+.bg-main-intro .box,
+.bg-footer .box {
+    padding: 4rem 2rem;
+}
+
+.bg-main-content .box {
+    padding: 2rem;
+    color: #666;
+}
+
+header {
+    font-size: 1rem;
+}
+
+.bg-main-intro .box:first-child {
+    font-family: "Droid Serif", serif;
+    font-size: 1rem;
+}
+
+.bg-header {  
+    background-image: url(../img/bg-masthead.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    
+    background-color: darkblue;
+    background-blend-mode: multiply;
+}
+
+.bg-main-intro {
+    background-color: royalblue;
+    color: #EEE;
+}
+
+.bg-main-intro .box-wrapper {
+    padding;
+}
+
+.bg-footer {
+    background-color: #EEE;
+    color: #666;
+}
+
+.bg-footer .source a {
+    color: #666;
+}
+
+.bg-footer .source a:hover {
+    color: #CCC;
+}
+
+
+@media screen and (min-width: 35rem) {
+    
+    #tag-line {
+        font-size: 4rem; 
+    }
+    
+    body {
+        font-size: 1rem;
+    }
+    
+    h2::first-letter {
+        font-size: 6rem;
+    }
+}
+
+@media screen and (min-width: 50rem) {
+    .bg-main-intro .box p {
+        font-size: 1.618rem;
+    }
+}
+
+@media screen and (min-width: 100rem) {
+    body, 
+    header, 
+    .bg-main-intro .box:first-child {
+        font-size: 1.618rem;
+    }
+    
+    #tag-line {
+        font-size: 6rem; 
+    }
+    
+    h2::first-letter {
+        font-size: 8rem;
+    }
+    
+    .box {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .bg-main-intro .box p {
+        font-size: 2rem;
+    }
+    
+    .bg-main-content .box {
+        padding: 4rem;
+    }
+    
+    .bg-header .box, 
+    .bg-main-intro .box,
+    .bg-footer .box {
+        padding: 4rem;
+    }
+}
+
+ 
